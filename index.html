@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20241943088 yanyan</title>
+    <style>
+        *{
+            list-style: none;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }
+        .yijihezi{
+            width: 700px;
+            height: 200px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+        .yijiliebiao>li{
+            background-color: #eee;
+            width: 90px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 3px;
+            border-radius: 5px;
+            position: relative;
+            }
+        .erjihezi{
+            position: absolute;
+            top: 0px;
+            left: 90px;
+            width: 90px;
+            height: 140px;
+            background-color: #eee;
+            border-radius: 5px;
+            display: none;
+        }  
+        .erjiliebiao{
+            padding:0px ;
+        } 
+        .erjiliebiao>li{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 12px;
+        } 
+        .yijiliebiao>li:hover>.erjihezi{
+            display: block;
+        }                                       
+    </style> 
+</head>
+<body>
+    <div class="yijihezi">
+        <ul class="yijiliebiao">
+            <li>
+                <a href="#">娱乐</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">游戏</a></li>
+                        <li><a href="#">动漫</a></li>
+                        <li><a href="#">漫画</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">科技</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">数码</a></li>
+                        <li><a href="#">手机</a></li>
+                        <li><a href="#">电脑</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">美食</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">炒面</a></li>
+                        <li><a href="#">米粉</a></li>
+                        <li><a href="#">饺子</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
